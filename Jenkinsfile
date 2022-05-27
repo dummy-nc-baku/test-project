@@ -23,7 +23,6 @@ pipeline {
         stage('ver important step 2') {
             steps {
                 echo 'Hello World'
-                echo "Value from params: ${params.ver}"
                 echo "env variable NAME: ${NAME}"
             }
         }
