@@ -33,7 +33,7 @@ pipeline {
                 sh "ls -la"
                 sh(script: 'date +%Y-%m-%d', returnStdout: false)
                 echo "learnin groovy!"
-                sh "mvn -version"
+                sh "bash -version"
             }
         }    
     }
