@@ -24,6 +24,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 echo "env variable NAME: ${NAME}"
+                echo "some nice gentleman from Titanic should appear above"
             }
         }
     }
