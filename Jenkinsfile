@@ -36,12 +36,12 @@ pipeline {
                 echo "learnin groovy!"
                 sh "bash -version"
             }
-        } 
+        }
+    }
         
-        post {
-            always {
-                mail to: 'baku@netcompany.com', subject: "build built", body: "Another successfull job"
-            }
+    post {
+        always {
+            mail to: 'baku@netcompany.com', subject: "build built", body: "Another successfull job"
         }
     }
 }
