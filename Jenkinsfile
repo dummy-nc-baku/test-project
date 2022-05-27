@@ -30,9 +30,10 @@ pipeline {
         
         stage('testing some bash commands') {
             steps {
-                sh "ls -A"
-                sh(script: 'date +%Y-%m-%d', return stdout: false)
-                echo ~"learnin groovy!"
+                sh "ls -la"
+                sh(script: 'date +%Y-%m-%d', returnStdout: false)
+                echo "learnin groovy!"
+                sh "mvn -version"
             }
         }    
     }
