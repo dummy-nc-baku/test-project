@@ -30,6 +30,7 @@ pipeline {
         
         stage('testing some bash commands') {
             steps {
+                sh "pwd"
                 sh "ls -la"
                 sh(script: 'date +%Y-%m-%d', returnStdout: false)
                 echo "learnin groovy!"
