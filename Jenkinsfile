@@ -27,5 +27,13 @@ pipeline {
                 echo "some nice gentleman from Titanic should appear above"
             }
         }
+        
+        stage('testing some bash commands') {
+            steps {
+                sh "ls -A"
+                sh(script: 'date +%Y-%m-%d', return stdout: false)
+                echo ~"learnin groovy!"
+            }
+        }    
     }
 }
