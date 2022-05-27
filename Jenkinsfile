@@ -41,7 +41,7 @@ pipeline {
         
     post {
         always {
-            mail to: 'baku@netcompany.com', subject: "build built", body: "Another successfull job"
+            echo "i wanted to send email, but copypaste from some random webpage doesn't work"
         }
     }
 }
